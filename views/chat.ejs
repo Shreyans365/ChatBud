@@ -1,0 +1,52 @@
+<html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link type="text/css" rel="stylesheet" href="/css/chat.css">
+    </head>
+    <body>
+        <script>
+            const urlParams = new URLSearchParams(location.search);
+            const username = urlParams.get('name');
+            const room = urlParams.get('room');
+            const regex = /^[a-zA-Z]+$/;
+            if (username == "" || room == "" || !regex.test(username) || username.length > 15 || isNaN(room) || parseInt(room) < 0 || parseInt(room) > 999) {
+                alert("Username or Room number Invalid \n 1. Username should be less than 15 characters. \n 2. Room number should be between 0 and 999");
+                window.location.replace("/");
+            }
+        </script>
+        <div id="main-div">
+
+            <div id="room-number">
+
+            </div>
+
+            <div id='users-list'>
+                <h1>Users</h1>
+
+            </div>
+
+
+            <div id="messageFeed">
+
+            </div>
+
+            <form id="chat-form">
+                    <input autocomplete="off" id="msg" type="text" placeholder="Press enter to send message..." />
+            </form>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="" async defer></script>
+    </body>
+</html>
