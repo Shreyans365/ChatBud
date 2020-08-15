@@ -1,0 +1,166 @@
+#main-div {
+    height: 500px;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: #3F51B5;
+    position: relative;
+    padding: 10px;
+}
+
+
+#room-number {
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 3em;
+    height: 70px;
+    width: 150px;
+    background-color: #FFC107;
+    margin-bottom: 10px;
+    left: 10px;
+    top: 10px;
+    font-family: DejaVu Sans Mono, monospace;
+}
+
+#users-list {
+    position: absolute;
+    height: 400px;
+    width: 150px;
+    background-color: #FFC107;
+    padding-top: 10px;
+    top: 100px;
+    left: 10px;
+    overflow-y: auto;
+    font-family: Andale Mono, monospace;
+}
+
+#users-heading {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#users-p {
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+#messageFeed {
+    position: absolute;
+    height: 450px;
+    width: 510px;
+    right: 25px;
+    top: 10px;
+    background-color: #FFC107;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+#chat-form {
+    position: absolute;
+    height: 20px;
+    width: 510px;
+    right:25px;
+    bottom: 5px;
+}
+
+.admin {
+    display: inline-block;
+    background-color: lightsteelblue;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.admin .userP {
+    text-align: center;
+    margin: 0;
+}
+
+.admin .textP {
+    text-align: center;
+    margin: 0;
+}
+
+.admin .timeP {
+    text-align: right;
+    margin: 0;
+}
+
+.user {
+    display: inline-block;
+    background-color: lightgreen;
+    width: 250px;
+    margin-left: 230px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.user .userP {
+    text-align: center;
+    margin: 0;
+}
+
+.user .textP {
+    text-align: left;
+    max-width: 180px;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+.user .timeP {
+    text-align: right;
+    margin: 0;
+}
+
+.other {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.other .userP {
+    text-align: center;
+    margin: 0;
+}
+
+.other .textP {
+    text-align: left;
+    max-width: 180px;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+.other .timeP {
+    text-align: right;
+    margin: 0;
+}
+
+.other {
+    display: inline-block;
+}
+
+#msg {
+    width: 100%;
+    line-height: 2em;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 0px solid;
+}
+
+.userP {
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 0.8em;
+}
+
+.timeP {
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 0.8em;
+}
